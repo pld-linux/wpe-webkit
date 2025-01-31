@@ -20,7 +20,7 @@ Summary(pl.UTF-8):	Port osadzalnego komponentu WWW WebKit do WPE
 Name:		wpe-webkit
 # keep 2.44.x here for API 1.0; for 2.46+ with API 1.1 & 2.0 see wpe-webkit1.1.spec
 Version:	2.44.4
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		X11/Libraries
 Source0:	https://wpewebkit.org/releases/wpewebkit-%{version}.tar.lz
