@@ -28,6 +28,7 @@ Source0:	https://wpewebkit.org/releases/wpewebkit-%{version}.tar.lz
 Patch0:		%{name}-x32.patch
 Patch2:		%{name}-driver-version-suffix.patch
 Patch3:		parallel-gir.patch
+Patch4:		icu76.patch
 URL:		https://wpewebkit.org/
 BuildRequires:	/usr/bin/ld.gold
 BuildRequires:	EGL-devel
@@ -157,9 +158,10 @@ Dokumentacja API portu WebKitu do WPE.
 
 %prep
 %setup -q -n wpewebkit-%{version}
-%patch0 -p1
-%patch2 -p1
-%patch3 -p1
+%patch -P0 -p1
+%patch -P2 -p1
+%patch -P3 -p1
+%patch -P4 -p1
 
 %build
 %if %{with lowmem}
