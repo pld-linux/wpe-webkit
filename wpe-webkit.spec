@@ -79,7 +79,7 @@ BuildRequires:	perl-base >= 1:5.10.0
 BuildRequires:	pkgconfig
 BuildRequires:	python >= 1:2.7.0
 BuildRequires:	rpm-build >= 4.6
-BuildRequires:	rpmbuild(macros) >= 1.699
+BuildRequires:	rpmbuild(macros) >= 2.029
 BuildRequires:	ruby >= 1:2.5
 BuildRequires:	ruby-modules >= 1:2.5
 BuildRequires:	sqlite3-devel >= 3
