@@ -164,9 +164,7 @@ Dokumentacja API portu WebKitu do WPE.
 %patch -P4 -p1
 
 %build
-%if %{with lowmem}
-CXXFLAGS="%{rpmcxxflags} -DNDEBUG --param ggc-min-expand=20 --param ggc-min-heapsize=65536"
-%endif
+CXXFLAGS="%{rpmcxxflags} -DNDEBUG %{?with_lowmem:--param ggc-min-expand=20 --param ggc-min-heapsize=65536}"
 %cmake -B build-soup2 \
 	-DENABLE_GEOLOCATION=ON \
 	-DENABLE_GTKDOC=ON \
